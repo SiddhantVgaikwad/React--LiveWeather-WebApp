@@ -1,0 +1,31 @@
+/* Smooth transitions for background changes */
+.bg-gradient-to-br {
+  transition: background 0.5s ease;
+}
+
+/* Card styling */
+.weather-card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .forecast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Scrollable hourly forecast for mobile */
+@media (max-width: 640px) {
+  .hourly-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .hourly-scroll > div {
+    min-width: 120px;
+  }
+}
